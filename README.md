@@ -9,10 +9,10 @@
 
 ```php
 $parserStock = [[
-    'MED_ID' => '8881', // \d+ product XML_ID
+    'MED_ID' => 'X-0001', // product XML_ID
     'PROMO' => 'SOME_PRODUCT_COUPON16|15;SOME_PRODUCT_COUPON20|20',
 ], [
-    'MED_ID' => '8882', // \d+ product XML_ID
+    'MED_ID' => 'Y-0002', // product XML_ID
     'PROMO' => 'SOME_PRODUCT_COUPON16|17',
 ]];
 

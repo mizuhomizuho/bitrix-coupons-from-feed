@@ -38,7 +38,7 @@ class CatalogStockPromoCoupons
             || !is_string($item['PROMO'])
             || !isset($item['MED_ID'])
             || !is_string($item['MED_ID'])
-            || !preg_match('/\d+/', $item['MED_ID'])
+            || !preg_match('/[a-z0-9_-]+/i', $item['MED_ID'])
         ) {
             return;
         }
