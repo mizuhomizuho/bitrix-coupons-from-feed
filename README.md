@@ -17,8 +17,8 @@ $parserStock = [[
 ]];
 
 $promoCouponsInstance = new CatalogStockPromoCoupons(
-    (int) $this->arParams['IMPORT']['PROMO']['USERS_GROUP_ID'], // 2
-    $this->arParams['IMPORT']['PROMO']['SITE_ID'], // s1
+    USERS_GROUP_ID, // 2
+    SITE_ID, // s1
 );
 
 foreach($parserStock as $item) {
