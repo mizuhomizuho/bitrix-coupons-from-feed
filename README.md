@@ -10,7 +10,7 @@
 ```php
 $parserStock = [[
     'XML_ID' => 'X-0001', // product XML_ID
-    'PROMO' => 'SOME-PRODUCT-COUPON|10;SOME-PRODUCT-COUPON-20|20',
+    'PROMO' => 'SOME-PRODUCT-COUPON|10;SOME-PRODUCT-COUPON-20|20', // COUPON_CODE | SALE_PERCENT
 ], [
     'XML_ID' => 'Y-0002', // product XML_ID
     'PROMO' => 'SOME-PRODUCT-COUPON|15', // COUPON_CODE | SALE_PERCENT
@@ -18,7 +18,7 @@ $parserStock = [[
 
 $promoCouponsInstance = new CatalogStockPromoCoupons(
     USERS_GROUP_ID, // 2
-    SITE_ID, // s1
+    SITE_ID, // 's1'
 );
 
 foreach($parserStock as $item) {
