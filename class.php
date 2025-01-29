@@ -36,9 +36,9 @@ class CatalogStockPromoCoupons
         if (
             !isset($item['PROMO'])
             || !is_string($item['PROMO'])
-            || !isset($item['MED_ID'])
-            || !is_string($item['MED_ID'])
-            || !preg_match('/[a-z0-9_-]+/i', $item['MED_ID'])
+            || !isset($item['XML_ID'])
+            || !is_string($item['XML_ID'])
+            || !preg_match('/[a-z0-9_-]+/i', $item['XML_ID'])
         ) {
             return;
         }
@@ -57,7 +57,7 @@ class CatalogStockPromoCoupons
                 continue;
             }
             $this->processingCoupon(
-                (int)$item['MED_ID'],
+                (int)$item['XML_ID'],
                 $promoItemExpl[0],
                 (int)$promoItemExpl[1],
             );
