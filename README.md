@@ -10,10 +10,10 @@
 ```php
 $parserStock = [[
     'XML_ID' => 'X-0001', // product XML_ID
-    'PROMO' => 'SOME_PRODUCT_COUPON16|15;SOME_PRODUCT_COUPON20|20',
+    'PROMO' => 'SOME-PRODUCT-COUPON|10;SOME-PRODUCT-COUPON-20|20',
 ], [
     'XML_ID' => 'Y-0002', // product XML_ID
-    'PROMO' => 'SOME_PRODUCT_COUPON16|17',
+    'PROMO' => 'SOME-PRODUCT-COUPON|15', // COUPON_CODE | SALE_PERCENT
 ]];
 
 $promoCouponsInstance = new CatalogStockPromoCoupons(
