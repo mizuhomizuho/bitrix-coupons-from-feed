@@ -57,7 +57,7 @@ class CatalogStockPromoCoupons
                 continue;
             }
             $this->processingCoupon(
-                (int)$item['XML_ID'],
+                $item['XML_ID'],
                 $promoItemExpl[0],
                 (int)$promoItemExpl[1],
             );
@@ -207,7 +207,7 @@ class CatalogStockPromoCoupons
         $connectionDB->rollbackTransaction();
     }
 
-    private function processingCoupon(int $medXmlId, string $codeCoupon, int $salePercent): void
+    private function processingCoupon(string $medXmlId, string $codeCoupon, int $salePercent): void
     {
         $discountsFormFeed = $this->getDiscountsFromFeed();
         if (!isset($discountsFormFeed[$codeCoupon][$medXmlId])) {
