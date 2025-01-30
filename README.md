@@ -1,4 +1,4 @@
-# Bitrix coupons from feed
+# Bitrix discount coupons from the feed
 
 - Allowed coupon characters: A-Za-z0-9_-
 - The discount percentage is an integer.
